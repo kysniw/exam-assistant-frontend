@@ -1,12 +1,16 @@
+import { Container, Flex } from "@chakra-ui/react";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
 
 const Layout = () => {
   return (
-    <div>
-      <h1>Title</h1>
-      <Outlet />
-    </div>
+    <Flex direction="column" h="100vh">
+      <Header />
+      <Container flex="1">
+        <Outlet />
+      </Container>
+    </Flex>
   );
 };
 
