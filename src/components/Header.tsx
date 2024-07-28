@@ -1,5 +1,4 @@
 import { Button, Center, Flex, Icon } from "@chakra-ui/react";
-import React from "react";
 import { TbLogin2 } from "react-icons/tb";
 
 const Header = () => {
@@ -14,7 +13,7 @@ const Header = () => {
           Zaloguj się
         </Button>
       </Center>
-      <Center visibility={{ base: "collapse", sm: "visible" }}>
+      <Center hideBelow="sm">
         <Button>Zarejestruj się</Button>
       </Center>
     </Flex>
